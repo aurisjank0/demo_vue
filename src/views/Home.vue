@@ -1,11 +1,26 @@
-<script setup>
-
-</script>
-
 <template>
-  $END$
+  <div class="container">
+    <header class="jumbotron">
+      <b-container fluid>
+        <Products/>
+      </b-container>
+    </header>
+  </div>
 </template>
 
-<style scoped>
+<script>
+import Products from "@/views/Products.vue";
 
-</style>
+export default {
+  name: 'Home',
+  components: { Products },
+  data() {
+    return {
+      content: ''
+    };
+  },
+  mounted() {
+
+  }
+};
+</script>
