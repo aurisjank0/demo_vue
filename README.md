@@ -5,6 +5,11 @@
 npm install
 ```
 
+## Backend
+```angular2html
+for backend part see backed readme.md
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
