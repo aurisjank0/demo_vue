@@ -121,11 +121,12 @@ export default {
       vm.setProductInfo(info);
     },
     submit: async function () {
-      let formData = new FormData();
-      formData.append("productId", this.productSelected);
-      formData.append("commitment", this.optionSelected);
-      formData.append("returnMonths", this.input);
-      this.response = (await getCalculation(formData)).data;
+      let data = {
+        productId: this.productSelected,
+        commitment: this.optionSelected,
+        returnMonths: this.input
+      }
+      this.response = (await getCalculation(data)).data;
     }
   }
 };
